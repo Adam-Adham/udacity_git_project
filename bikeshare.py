@@ -107,7 +107,7 @@ def station_stats(df):
     trips = df['Start Station'] + " to " + df['End Station']
     print("Most frequent trip:", trips.mode()[0])
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print(f"\nThis took {time.time() - start_time} seconds.")
     print('-' * 40)
 
 
