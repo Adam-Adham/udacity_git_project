@@ -36,3 +36,11 @@ python bikeshare.py
 
 This project was completed as part of the Udacity Programming for Data Science course.
 
+
+
+Dataset Note
+
+
+
+The CSV dataset files are required to run the project locally, but they are not uploaded to GitHub because they are listed in the .gitignore file.
+
