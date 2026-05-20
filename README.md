@@ -28,6 +28,16 @@ The CSV files are used locally but are not uploaded to GitHub because they are i
 
 
 
+Requirements
+
+
+
+This project requires Python and the pandas library to run successfully.
+
+
+
+
+
 How to Run using terminal:
 
 python bikeshare.py
