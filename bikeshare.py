@@ -149,7 +149,7 @@ def user_stats(df):
 
 
 def display_raw_data(df):
-    """Ask user if they want to see raw data, 5 rows at a time."""
+    """Display raw data in groups of five rows based on user input."""
     row_index = 0
 
     while row_index < len(df):
