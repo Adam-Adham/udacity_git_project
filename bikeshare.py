@@ -21,7 +21,7 @@ def get_filters():
         month: name of the month to filter by, or "all"
         day: name of the day to filter by, or "all"
     """
-    print("Hello! Let's explore some US bikeshare data!")
+    print("Hello! Let's explore some US bikeshare data together!")
 
     while True:
         city = input("Choose a city: Chicago, New York City, or Washington:\n")
