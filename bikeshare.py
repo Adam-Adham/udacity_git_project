@@ -150,15 +150,15 @@ def user_stats(df):
 
 def display_raw_data(df):
     """Display raw data in groups of five rows based on user input."""
-    row_index = 0
+    rows_per_page = 5
 
     while row_index < len(df):
         answer = input("\nWould you like to see 5 rows of raw data? Enter yes or no:\n")
         answer = answer.lower().strip()
 
         if answer == 'yes':
-            print(df.iloc[row_index:row_index + 5])
-            row_index += 5
+            print(df.iloc[row_index:row_index + rows_per_page])
+	    row_index += rows_per_page
         elif answer == 'no':
             break
         else:
