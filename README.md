@@ -28,7 +28,11 @@ The CSV files are used locally but are not uploaded to GitHub because they are i
 
 
 
-How to Run
+How to Run using terminal:
 
 python bikeshare.py
+
+
+
+This project was completed as part of the Udacity Programming for Data Science course.
 
