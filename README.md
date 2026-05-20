@@ -38,6 +38,14 @@ This project requires Python and the pandas library to run successfully.
 
 
 
+User Interaction
+
+
+
+The program asks the user to choose a city, month, and day. It also gives the user the option to display raw data five rows at a time.
+
+
+
 How to Run using terminal:
 
 python bikeshare.py
