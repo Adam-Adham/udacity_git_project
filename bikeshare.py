@@ -21,7 +21,7 @@ def get_filters():
         month: name of the month to filter by, or "all"
         day: name of the day to filter by, or "all"
     """
-    print("Hello! Let's explore some US bikeshare data!")
+    print("Hello! Let's explore some US bikeshare data together!")
 
     while True:
         city = input("Choose a city: Chicago, New York City, or Washington:\n")
@@ -107,7 +107,7 @@ def station_stats(df):
     trips = df['Start Station'] + " to " + df['End Station']
     print("Most frequent trip:", trips.mode()[0])
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print(f"\nThis took {time.time() - start_time} seconds.")
     print('-' * 40)
 
 
@@ -149,16 +149,16 @@ def user_stats(df):
 
 
 def display_raw_data(df):
-    """Ask user if they want to see raw data, 5 rows at a time."""
-    row_index = 0
+    """Display raw data in groups of five rows based on user input."""
+    rows_per_page = 5
 
     while row_index < len(df):
         answer = input("\nWould you like to see 5 rows of raw data? Enter yes or no:\n")
         answer = answer.lower().strip()
 
         if answer == 'yes':
-            print(df.iloc[row_index:row_index + 5])
-            row_index += 5
+            print(df.iloc[row_index:row_index + rows_per_page])
+	    row_index += rows_per_page
         elif answer == 'no':
             break
         else:
